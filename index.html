@@ -9,20 +9,23 @@
 </head>
 
 <body>
-
+    
     <div class="container">
+        <div class="timer"></div>
+
         <div id="question-container" class="hide">
-            <div id="question">Questions</div>
-            <div id="answer-buttons" class="btn-grid">
+            <div id="timer"></div>
+            <div class="display-questions">
+                <h1>Code Quiz Challenger</h1>
+                <div id="answer-buttons" class="btn-grid">
+                    <div class="controls">
+                        <button id="start-btn" class="start-btn btn">Start the Quiz</button>
+                    </div>
+                    <div class="results"></div>
+                </div>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <script defer src="script.js"></script>
-            </div>
-
-        </div>
-
-    </div>
+            <script src=".assets/js/questions.js"></script>
+            <script defer src="./assets/script.js"></script>
 </body>
 
 </html>
