@@ -5,3 +5,5 @@ Created divs in html to control buttons
 Went over to js file to creat elements
 First I hooked the display question element then hooked the timer elements 
 Then I created a var to element for results
+I have spent hours attempting to code the js I am stuck at the start button to hide. 
+I added a 

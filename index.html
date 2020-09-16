@@ -4,28 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
 </head>
 
 <body>
-    
-    <div class="container">
+    <div class="container" style="text-align: center;">
         <div class="timer"></div>
+        <div class="display-questions">
 
-        <div id="question-container" class="hide">
-            <div id="timer"></div>
-            <div class="display-questions">
-                <h1>Code Quiz Challenger</h1>
-                <div id="answer-buttons" class="btn-grid">
-                    <div class="controls">
-                        <button id="start-btn" class="start-btn btn">Start the Quiz</button>
-                    </div>
-                    <div class="results"></div>
-                </div>
-            </div>
-            <script src=".assets/js/questions.js"></script>
-            <script defer src="./assets/script.js"></script>
+            <div id="answer-buttons" class="btn-grid"></div>
+            <h1>Code Quiz Challenger</h1>
+            </h2>Test your quizzing skills</h2>
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
+            <script>
+                $(document).ready(function(){
+                  $("start-btn").click(function(){
+                    $(this).hide();
+                  });
+                });
+                </script>
+        </div>
+        <div class="results"></div>
+    </div>
+    </div>
+
+
+
+    <script src="assets/js-questions.js"></script>
+    <script defer src="assets/script.js"></script>
+    
+</div> 
 </body>
 
 </html>
