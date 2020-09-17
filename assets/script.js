@@ -1,14 +1,21 @@
 // Connecting elements form the page 
 //Hook question element
-var displayQuestionEl = document.querySelector(".display-questions")
+var displayQuestionEl = document.querySelector("#question-container");
 //Hooking the timer element
-var timerEl = document.querySelector(".timer")
+var timerEl = document.querySelector(".timer");
 // Hooking the results 
-var resultsEl = document.querySelector(".results")
+var resultsEl = document.querySelector(".results");
 // Creating dynamic elements 
-var mainDisplay = document.createElement("h3");
+var mainDisplay = document.createElement("h1");
 // Creating button to start Quiz
-var startBtn = document.createElement("start-btn");
+var startButton = document.querySelector(".startBtn");
+
+var quizContainer = document.getElementById('.question');
+
+var submitButton = document.getElementById('.submit');
+
+var Button = document.createElement("Button");
+
 
 // Declaring global variables
 // Variable to store timer
@@ -16,27 +23,36 @@ var timer = 90;
 // variables to store current index
 var index = 0;
 
+var highScore
 
-//-----------FUNCTIONS------------
 
-// functions that loads content when page fist loads
+// _________ FUNCTIONS------------
+
+
+    // functions that loads content when page fist loads
 function openingPage() {
     // add text to h3 element
     mainDisplay.textContent = "Press Start Quiz to begin"
     // adding text to button 
-    startButton.textContent = "Begin"
+    startButton.textContent = "Start Quiz"
     // appending text to start button
     displayQuestionEl.append(mainDisplay, startQuiz)
 }
 
+var shuffledQuestions, currentQuestionIndex
+
+addEventListener.startButton("click", startQuiz());
+
 function startQuiz() {
-    startButton.style.display = "none";
-    questionContainer.classList.remove("hide");
+    console.log('Started')
+    startButton.style.display = "Start Quiz";
+    startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    displayQuestionEl.classList.remove('hide');
+    setNextQuestion()
     currentQuestionIndex = 0;
-    nextQuestion();
     startTimer();
 }
-
 // function handling the timer
 function showTimer() {
     //    displaying timer to screen
@@ -52,24 +68,25 @@ function showTimer() {
             clearInterval(questionTimer);
         }
 
-    }, 1 * 1000)
+    },
+        1 * 1000)
+    setInterval(function () { alert("Game Over"); }, 45 * 1000);
 }
-
-    let secondsLeft = 90;
-    let timerInterval; 0;
-
-function updateTimer() {
-    timeEl.textContent = secondsLeft;
-}
+secondsLeft = 45;
+timerInterval; 0;
 
 function startTimer() {
+    timeEl.textContent = 0, secondsLeft;
     timerInterval = setInterval(function () {
-        secondsLeft-- = 10;
-        updateTimer()0;
+        secondsLeft--;
+        updateTimer();
         if (0 === secondsLeft) {
             clearInterval(timerInterval);
         }
     }, 1 * 1000);
+}
+function updateTimer() {
+   
 }
 
 function nextQuestion() {
@@ -84,7 +101,7 @@ function nextQuestion() {
     // Appevding the main text tdisplay variable
     displayQuestionEl.append(mainDisplay);
     //creating a conatiner for choice buttons
-    var choiceContainer = document.createElement("button");
+    var choiceContainer = document.createElement("btn");
     //    create a loop
     for (let i = 0; i < currentQuestion.choices.length; i++) {
         //    creating button for choices
@@ -101,34 +118,84 @@ function nextQuestion() {
         displayQuestionEl.append(mainDisplay);
 
     }
+    // SUBMIT NAE IN BOX TO STORE INITIALS
+    inputBox.onesubmit = function (event) {
+        event.preventDefault();
 
+        var storedInfo = JSON.parse(localStorage.getItem("highscores"));
 
-}
+        if (storedInfo !== null) {
 
-// function to check answer
-function checkAnswer(event) {
+            highScore = storedInfo
 
-    //    LOGIC TO CHECK FOR RIGHT ANSWER */
-    var responseText = event.textContent;
-    console.log(responseText);
+        }
+        var highScoreObj = {
+            name: submitForm.initials.value,
+            score: highScore
+        }
+        highScore.push(highScoreObj);
 
-    if (responseText === questions[index].answer) {
-        console.log("Correct");
-    } else {
-        console.log("incorrect");
+        localStorage.setItem("High Score", score, JSON.stringify(highScore))
+
+        scoreboard(0);
+
+        function scoreboard() {
+            var storedScores = JSON.parse(localStorage.getItem("highscores"));
+
+            displayQuestionEl.textContent = "";
+
+            timerEl.style.display = "none";
+
+            resultsEl.style.display = "none";
+
+            mainDisplay.textContent = "High Score";
+
+            submitButton, textContent = storedScores.value
+
+            displayQuestionEl.append(timerEl, resultsEl, highScore, mainDisplay, submitButton);
+
+        }
+
     }
+    function showQuestion(question) {
 
-        //    increase by 1
-        index++;
-    // show next question
-    nextQuestion();
+        displayQuestionEl.innerText + question.question;
+        question.answers.forEach(answer => {
+            const button.innerText = answer.textContent;
+            button.classList.add('btn');
+            if (answer.correct) {
+                button.dataset.correct = answer.correct
+            }
+            button.addEventListener('click', selectAnswer)
+            answerButtonsElement.appendChild(Button)
+        });
 
-}
+        // function to check answer
+        function checkAnswer(event) {
 
-function gameOver() {
+            //    LOGIC TO CHECK FOR RIGHT ANSWER */
+            var responseText = event.target.textContent;
+            console.log(responseText);
 
+            if (responseText === question[index].answer) {
+                console.log("Correct");
+            } else {
+                console.log("incorrect");
+                timer = (timer - 10)
 
-}
+            }
 
-startButton.addEventListener("click", startQuiz)
-openingPage();
+            //    increase by 1
+            index++;
+            // show next question
+            nextQuestion();
+
+        }
+        // on submit, show results
+        submitButton.onclick = function () {
+            showResults(question, quizContainer, results);
+        }
+
+        startButton.addEventListener('click', StartQuiz);
+
+        openingPage();
