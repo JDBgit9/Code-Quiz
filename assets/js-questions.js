@@ -2,189 +2,187 @@
 let questions = [
 
     {
-        question : "2 + 2 = ?",
+        question: "2 + 2 = ?",
 
-        choiceA : "4",
+        choiceA: "4",
 
-        choiceB : "6",
+        choiceB: "6",
 
-        choiceC : "d",
+        choiceC: "d",
 
-        choiceD : "8",
+        choiceD: "8",
 
-        correct : "A",
+        correct: "A",
 
-    },{
+    }, {
 
-        question : "10 + 19 = ?",
+        question: "10 + 19 = ?",
 
-        choiceA : "29",
+        choiceA: "29",
 
-        choiceB : "17",
+        choiceB: "17",
 
-        choiceC : "7",
+        choiceC: "7",
 
-        choiceD : "None of the above",
+        choiceD: "None of the above",
 
-        correct : "C",
+        correct: "C",
 
-    },{
+    }, {
 
-        question : "17 * 1 = ?",
+        question: "17 * 1 = ?",
 
-        choiceA : "g",
+        choiceA: "g",
 
-        choiceB : "k",
+        choiceB: "k",
 
-        choiceC : "q",
+        choiceC: "q",
 
-        choiceD : "x",
+        choiceD: "x",
 
-        correct : "C",
+        correct: "C",
 
-    },{
+    }, {
 
-        question : "2 * 2 = ?",
+        question: "2 * 2 = ?",
 
-        choiceA : "g",
+        choiceA: "g",
 
-        choiceB : "d",
+        choiceB: "d",
 
-        choiceC : "4",
+        choiceC: "4",
 
-        choiceD : "22",
+        choiceD: "22",
 
-        correct : "B"
+        correct: "B"
 
-    },{
+    }, {
 
-        question : "4 + xy = ?", 
+        question: "4 + xy = ?",
 
-        choiceA : "8xy",
+        choiceA: "8xy",
 
-        choiceB : "4boys",
+        choiceB: "4boys",
 
-        choiceC : "4xy",
+        choiceC: "4xy",
 
-        choiceD : "5-xy",
+        choiceD: "5-xy",
 
-        correct : "C"
+        correct: "C"
 
-    },{
+    }, {
 
-        question : "x + yz = ?",
+        question: "x + yz = ?",
 
-        choiceA : "eyz",
+        choiceA: "eyz",
 
-        choiceB : "xyz",
+        choiceB: "xyz",
 
-        choiceC : "abc",
+        choiceC: "abc",
 
-        choiceD : "123",
+        choiceD: "123",
 
-        correct : "A",
+        correct: "A",
 
-    },{
+    }, {
 
-        question : "11 + 11 = ?",
+        question: "11 + 11 = ?",
 
-        choiceA : "9",
+        choiceA: "9",
 
-        choiceB : "6", 
+        choiceB: "6",
 
-        choiceC : "4",
+        choiceC: "4",
 
-        choiceD : "22",
+        choiceD: "22",
 
-        correct :"C",
+        correct: "C",
 
-    },{
+    }, {
 
-        question :  "abc is easy as = ?",
+        question: "abc is easy as = ?",
 
-        choiceA : "69",
+        choiceA: "69",
 
-        choiceB : "do re mi",
+        choiceB: "do re mi",
 
-        choiceC : "407",
+        choiceC: "407",
 
-        choiceD : "123",
+        choiceD: "123",
 
-        correct : "D",
+        correct: "D",
 
-    },{
+    }, {
 
-        question :  "123xyz + abc = ?",
+        question: "123xyz + abc = ?",
 
-        choiceA : "abc123xyz", 
+        choiceA: "abc123xyz",
 
-        choiceB : "123abcxyz",
+        choiceB: "123abcxyz",
 
-        choiceC : "123xyzab c",
+        choiceC: "123xyzab c",
 
-        choiceD : "5",
+        choiceD: "5",
 
-        correct : "B"
+        correct: "B"
 
-    },{
+    }, {
 
-        question : "3 * 3 = ?",
+        question: "3 * 3 = ?",
 
-        choiceA : "9",
+        choiceA: "9",
 
-        choiceB : "6",
+        choiceB: "6",
 
-        choiceC : "i",
+        choiceC: "i",
 
-        choiceD : "n",
+        choiceD: "n",
 
-        correct : "C",
+        correct: "C",
 
-    },{
+    }, {
 
-        question :  "5 * 2 = ?",
+        question: "5 * 2 = ?",
 
-        choiceA : "10",
+        choiceA: "10",
 
-        choiceB : "g",
+        choiceB: "g",
 
-        choiceC : "4",
+        choiceC: "4",
 
-        choiceD : "j",
+        choiceD: "j",
 
-        correct : "D"
+        correct: "D"
 
     },
     {
 
-        question : "44 + 0 = ?",
+        question: "44 + 0 = ?",
 
-        choiceA : "h",
+        choiceA: "h",
 
-        choiceB : "220",
+        choiceB: "220",
 
-        choiceC : "8",
+        choiceC: "8",
 
-        choiceD : "none of the above",
+        choiceD: "none of the above",
 
-        correct : "C",
+        correct: "C",
 
-    },{
+    }, {
 
-        question : "99 * 1 = ?",
+        question: "99 * 1 = ?",
 
-        choiceA : "9",
+        choiceA: "9",
 
-        choiceB : "99",
+        choiceB: "99",
 
-        choiceC : "i",
+        choiceC: "i",
 
-        choiceD : "100",
+        choiceD: "100",
 
-        correct : "C"
+        correct: "C"
 
     }
-
-
 
 ];
