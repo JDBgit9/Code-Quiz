@@ -1,76 +1,53 @@
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
+const start = document.getElementById("start");
+
+const quiz = document.getElementById("quiz");
+
+const question = document.getElementById("question");
+
+const choiceA = document.getElementById("A");
+
+const choiceB = document.getElementById("B");
+
+const choiceC = document.getElementById("C");
+
+const choiceD = document.getElementById("D");
+
+const counter = document.getElementById("counter");
+
+const timeGauge = document.getElementById("timeGauge");
+
+const progress = document.getElementById("progress");
+
+const scoreDiv = document.getElementById("scoreContainer");
 
 
-function buildQuiz(){}
+const lastQuestion = questions.length - 1;
 
-function showResults(){}
+let runningQuestion = 0;
 
-// display quiz right away
-buildQuiz();
+function renderQuestion(){
 
-// on submit, show results
-submitButton.addEventListener('click', showResults);
+    let q = questions[runningQuestion];
 
-// ================FUNCTIONS===============
+    question.innerHTML = "<p>"+ q.question +"</p>";
 
-function buildQuiz(){
-    // variable to store the HTML output
-    const output = [];
-  
-    // for each question...
-    uestions.forEach(
-      (currentQuestion, questionNumber) => {
-  
-        // variable to store the list of possible answers
-        const answers = [];
-  
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-  
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-  
-        // adding this question and its answers to the output
-        output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
-        );
-      }
-    );
-  
-    // Combine output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-  }
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
-    // the code we want to run for each question goes here
-  });
-  // we'll want to store the list of answer choices
-const answers = [];
+    qImg.innerHTML = "<img src="+ q.imgSrc +">";
 
-// and for each available answer...
-for(letter in currentQuestion.answers){
+    choiceA.innerHTML = q.choiceA;
 
-  // ...add an html radio button
-  answers.push(
-    `<label>
-      <input type="radio" name="question${questionNumber}" value="${letter}">
-      ${letter} :
-      ${currentQuestion.answers[letter]}
-    </label>`
-  );
+    choiceB.innerHTML = q.choiceB;
+
+    choiceC.innerHTML = q.choiceC;
+
 }
 
-// add this question and its answers to the output
-output.push(
-  `<div class="question"> ${currentQuestion.question} </div>
-  <div class="answers"> ${answers.join('')} </div>`
-);
+function renderProgress(){
+
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+
+    }
+
+}
+start.addEventListener("click",startQuiz);

@@ -5,38 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Code Quiz</title> 
+    <title>Code Quiz Challenger</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    
-    <div class="container" style="text-align: center;">
-        <h1>Code Quiz Challenger</h1>
-        <h2></h2>
-        <div id="home" class="flex-column flex-center"></div>
-        <div id="question-container" class="hide"></div>
-        <div class="controls">
-            <div id="quiz"></div>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-            
-        <div id="choices-btn" class="btn-grid">
-            <button class="btn">choice></button>
-            <button class="btn">choice</button>
-            <button class="btn">choice</button>
-            <button class="btn">choice</button>
-        <div class="timer"></div>
+
+    <div id="container">
+
+        <button class="start">Start Quiz!</div>
+
+        <div id="quiz" style="display: none">
+
+            <div id="question"></div>
+
+            <div id="qImg"></div>
+
+            <div id="choices">
+
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+
+            </div>
+
+            <div id="timer">
+
+                <div id="counter"></div>
+
+                <div id="btimeGauge"></div>
+
+                <div id="timeGauge"></div>
+
+            </div>
+
+            <div id="progress"></div>
+
         </div>
-       
-            <h3 id=""></h3>
-        </div>
-          </div>
-        </div>
-    </div>
-</div>
-    <script src="assets/js-questions.js"></script>
-    <script src="assets/script.js"></script>
+
+        <div id="scoreContainer" style="display: none"></div>
 
     </div>
+
+    <script src="quiz.js"></script>
+    
+    <script src="assets/js-questions.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
