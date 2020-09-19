@@ -16,6 +16,16 @@ I feel like i did the right functions
 I am just not sure where to put the codes. I dont think they are in the right place.
 I watched a lot of videos including the class vids to recap, but i feel lost.
 This is the most difficult thing I have had to do academically, but I am not giving up.
+I changed up my whole game.
+I was not happy with the orignal code
+I deleted and started from scratch
+my formatting is all wrong
+ alot to decipher and organize
+ I hand wrote in the beginning and realized I must write down digitally to have proper documents
+ so I am going back to the beginning andit slowing me down in the process
+ I am grateful for the review but there is more I have to process 
+ My button is getting better and the quiz is excelllent if i can jsut get it to work
+ 
 
 
 
