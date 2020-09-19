@@ -1,5 +1,5 @@
 //create question
-var questions = [
+const myQuestions = [
     {
         question:    "2 + 2 = ?",
         choices: ["9", "6", "4", "5"],
