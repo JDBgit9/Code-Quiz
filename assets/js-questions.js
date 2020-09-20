@@ -1,8 +1,39 @@
 //create question
 let questions = [
+ 
+    {
+
+        question: "17 * 1 = ?",
+
+        choiceA: "g",
+
+        choiceB: "k",
+
+        choiceC: "q",
+
+        choiceD: "x",
+
+        correct: "C",
+
+    },
 
     {
-        question: "2 + 2 = ?",
+
+        question: "10 + 19 = ?",
+
+        choiceA: "29",
+
+        choiceB: "17",
+
+        choiceC: "7",
+
+        choiceD: "None of the above",
+
+        correct: "C",
+
+    },
+    {
+        question: "2 * 2 = ?",
 
         choiceA: "4",
 
@@ -10,9 +41,9 @@ let questions = [
 
         choiceC: "d",
 
-        choiceD: "8",
+        choiceD: "z",
 
-        correct: "A",
+        correct: "C",
 
     }, {
 
@@ -44,7 +75,7 @@ let questions = [
 
     }, {
 
-        question: "2 * 2 = ?",
+        question: "2 + 2 = ?",
 
         choiceA: "g",
 
@@ -54,7 +85,7 @@ let questions = [
 
         choiceD: "22",
 
-        correct: "B"
+        correct: "C"
 
     }, {
 
@@ -64,11 +95,11 @@ let questions = [
 
         choiceB: "4boys",
 
-        choiceC: "4xy",
+        choiceC: "4x+y",
 
-        choiceD: "5-xy",
+        choiceD: "none of the above",
 
-        correct: "C"
+        correct: "B"
 
     }, {
 

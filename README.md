@@ -27,6 +27,12 @@ my formatting is all wrong
  My button is getting better and the quiz is excelllent if i can jsut get it to work
  I am grateful to JP who is so gracious to help us all with our homework
  I am grateful to Katie who is always there
+ Still having a diffucult time with this button issue. 
+
+ I am rewriting this all over again. I have spent a day on this trying to figure out how to make the buttons work
+ I learned about rem in my research
+ 
+
 
 
 
