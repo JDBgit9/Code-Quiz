@@ -120,9 +120,9 @@ let questions = [
 
         choiceB: "123abcxyz",
 
-        choiceC: "123xyzab c",
+        choiceC: "123xyzabc",
 
-        choiceD: "5",
+        choiceD: "all of the above",
 
         correct: "B"
 

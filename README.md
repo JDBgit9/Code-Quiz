@@ -25,7 +25,9 @@ my formatting is all wrong
  so I am going back to the beginning andit slowing me down in the process
  I am grateful for the review but there is more I have to process 
  My button is getting better and the quiz is excelllent if i can jsut get it to work
- 
+ I am grateful to JP who is so gracious to help us all with our homework
+ I am grateful to Katie who is always there
+
 
 
 
