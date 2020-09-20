@@ -1,9 +1,15 @@
-//create question
-let questions = [
- 
-    {
+const questions = document.getElementById("questions");
+const choice = Array.from (document.getElementsByClassName("choice-text"));
 
-        question: "17 * 1 = ?",
+let currentQuestions = {};
+let acceptingAnswers = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+
+
+let question = [ {
+         question: "17 * 1 = ?",
 
         choiceA: "g",
 
@@ -217,3 +223,55 @@ let questions = [
     }
 
 ];
+// CONSTANTS
+const correct_Bonus = 10;
+const max_Questions = 15;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...question];
+    console.log(availableQuestions);
+    getNewQuestion();
+    
+};
+
+getNewQuestion = () => {  
+    if (availableQuestions.length === 0 || questionCounter >= max_Questions){
+
+    }
+    questionCounter++;
+    Math.floor(Math.random() * availableQuestions.length);
+    currentQuestions = availableQuestions[questionCounter];
+    questions.innerText = currentQuestions;
+
+
+    choice.forEach(choice => {
+        const number = choice.dataset["number"];
+        question.innerText = currentQuestions["choice-text" + number];
+    });
+
+    availableQuestions.splice(questionIndex, 1);
+
+    acceptingAnswers = true;
+};
+
+choice.forEach(choice => {
+    choice.addEventListener("click", e => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+        console.log(selectedAnswer);
+        getNewQuestion();
+    });
+});
+
+
+
+
+
+
+
+startGame();

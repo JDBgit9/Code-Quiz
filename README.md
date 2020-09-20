@@ -31,6 +31,9 @@ my formatting is all wrong
 
  I am rewriting this all over again. I have spent a day on this trying to figure out how to make the buttons work
  I learned about rem in my research
+ I finally figured out the button issue and where I was going wrong
+ I finnally go t the opening page to function right
+ 
  
 
 
