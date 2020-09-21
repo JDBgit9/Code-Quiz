@@ -33,7 +33,9 @@ my formatting is all wrong
  I learned about rem in my research
  I finally figured out the button issue and where I was going wrong
  I finnally go t the opening page to function right
- 
+ This is far as I could get with this I just need more time. This is all new to me and I am taking a lot of information that I need to organize. Not to mention that I have other things going on at home and every arranging my room to be more adequate for this set up. I have been at this all weekend and a racing and starting over again and watching videos done everything I can to try to understand this and make it work but it is proving more difficult than I anticipated. I couldn't get the Chess to work right and the consol is always coming up with errors I got through that and figure some things out but then one thing led to another. There is a lot of problem-solving in this and learning a completely new language at the same time as taking in all this information is quite a task and I have no idea what I was get myself into. I had to go back to video one in the first class you just get the basics of the language in terms of the codes. I had to not host any more zoom calls because I need to focus solely on this and I have been making progress although I do miss the study group vibe. I would be more in fall if I was so far behind I do understand most of what's going on but putting it into application is very difficult without a tutor and private special attention I guess. 
+ This is as far as I got in I'm a bit embarrassed because I know I can do better if I had more time. This is taking three days of me studying about eight hours a day and I'm still not barreling through like some of the other students are. Not that I'm comparing myself but I am an artist and I have not use this side of my brain in a long time.
+ I am taking a vantage of the tutoring and will be doing more so because the one I want to tension is what I need most. To walk me through things and to help me Juliet into my system. I got the first page to look good I got to the buttons to 
  
 
 
@@ -43,6 +45,7 @@ my formatting is all wrong
 ##
 Study group was very helpful
 Katie, Christian Marquez and Jp Nederveld were very helpful.
+I hosted a lot of the call last week 
 
 
 
@@ -50,10 +53,15 @@ Katie, Christian Marquez and Jp Nederveld were very helpful.
 
 
 ###
-I watched this video to help me in the beginning
 Sources
-https://www.youtube.com/watch?v=riDzcEQbX6k&t=175s
 
+![Alt text](/assets/Quizpic1.png "Opening page")
+
+![Alt text](/assets/Quizpic2.png "Quiz Page")
+
+![Alt text](https://www.youtube.com/watch?v=riDzcEQbX6k&t=175s "YTvid")
+
+![Alt text](https://www.youtube.com/watch?v=IK257Ln0MZc&t=342s "YTvid")
 
 
 

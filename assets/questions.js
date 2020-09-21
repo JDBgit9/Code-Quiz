@@ -1,5 +1,8 @@
 const questions = document.getElementById("questions");
 const choice = Array.from (document.getElementsByClassName("choice-text"));
+const startGame =
+const correct_Bonus = 10;
+const max_Questions = 10;
 
 let currentQuestions = {};
 let acceptingAnswers = true;
@@ -8,24 +11,22 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 
-let question = [ {
-         question: "17 * 1 = ?",
+    availableQuestions = () => [{
+      questions: "17 + 1 = ?",
 
-        choiceA: "g",
+        choiceA: "q",
 
-        choiceB: "k",
+        choiceB: "18",
 
-        choiceC: "q",
+        choiceC: "9",
 
         choiceD: "x",
 
         correct: "C",
-
-    },
-
+ },
     {
 
-        question: "10 + 19 = ?",
+        questions: "10 + 19 = ?",
 
         choiceA: "29",
 
@@ -39,7 +40,7 @@ let question = [ {
 
     },
     {
-        question: "2 * 2 = ?",
+        questions: "2 * 2 = ?",
 
         choiceA: "4",
 
@@ -51,9 +52,10 @@ let question = [ {
 
         correct: "C",
 
-    }, {
+    }, 
+    {
 
-        question: "10 + 19 = ?",
+        questions: "10 + 19 = ?",
 
         choiceA: "29",
 
@@ -65,23 +67,24 @@ let question = [ {
 
         correct: "C",
 
+    }, 
+    {
+
+        questions: "150 + 18 = ?",
+
+        choiceA: "178",
+
+        choiceB: "6",
+
+        choiceC: "15",
+
+        choiceD: "168",
+
+        correct: "B",
+
     }, {
 
-        question: "17 * 1 = ?",
-
-        choiceA: "g",
-
-        choiceB: "k",
-
-        choiceC: "q",
-
-        choiceD: "x",
-
-        correct: "C",
-
-    }, {
-
-        question: "2 + 2 = ?",
+        questions: "2 + 2 = ?",
 
         choiceA: "g",
 
@@ -95,7 +98,7 @@ let question = [ {
 
     }, {
 
-        question: "4 + xy = ?",
+        questions: "4 + xy = ?",
 
         choiceA: "8xy",
 
@@ -105,11 +108,12 @@ let question = [ {
 
         choiceD: "none of the above",
 
-        correct: "B"
+        correct: "B",
 
-    }, {
+    }, 
+    {
 
-        question: "x + yz = ?",
+        questions: "x + yz = ?",
 
         choiceA: "eyz",
 
@@ -123,7 +127,7 @@ let question = [ {
 
     }, {
 
-        question: "11 + 11 = ?",
+        questions: "11 + 11 = ?",
 
         choiceA: "9",
 
@@ -137,7 +141,7 @@ let question = [ {
 
     }, {
 
-        question: "abc is easy as = ?",
+        questions: "abc is easy as = ?",
 
         choiceA: "69",
 
@@ -149,9 +153,10 @@ let question = [ {
 
         correct: "D",
 
-    }, {
+    }, 
+    {
 
-        question: "123xyz + abc = ?",
+        questions: "123xyz + abc = ?",
 
         choiceA: "abc123xyz",
 
@@ -161,11 +166,12 @@ let question = [ {
 
         choiceD: "all of the above",
 
-        correct: "B"
+        correct: "B",
 
-    }, {
+    }, 
+    {
 
-        question: "3 * 3 = ?",
+        questions: "3 * 3 = ?",
 
         choiceA: "9",
 
@@ -179,7 +185,7 @@ let question = [ {
 
     }, {
 
-        question: "5 * 2 = ?",
+        questions: "5 * 2 = ?",
 
         choiceA: "10",
 
@@ -189,12 +195,12 @@ let question = [ {
 
         choiceD: "j",
 
-        correct: "D"
+        correct: "D",
 
     },
     {
 
-        question: "44 + 0 = ?",
+        questions: "44 + 0 = ?",
 
         choiceA: "h",
 
@@ -206,9 +212,10 @@ let question = [ {
 
         correct: "C",
 
-    }, {
+    }, 
+    {
 
-        question: "99 * 1 = ?",
+        questions: "99 * 1 = ?",
 
         choiceA: "9",
 
@@ -218,19 +225,15 @@ let question = [ {
 
         choiceD: "100",
 
-        correct: "C"
+        correct: "C",
 
-    }
-
-];
+  }];
 // CONSTANTS
-const correct_Bonus = 10;
-const max_Questions = 15;
 
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...question];
+    availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
     
@@ -262,16 +265,11 @@ choice.forEach(choice => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset["choice"];
         console.log(selectedAnswer);
         getNewQuestion();
     });
 });
-
-
-
-
-
 
 
 startGame();

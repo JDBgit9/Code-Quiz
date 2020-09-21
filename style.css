@@ -56,11 +56,14 @@
 
     .container > * {
         width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        display: grid;
       }
       
       .flex-column {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
       }
       
       .flex-center {
