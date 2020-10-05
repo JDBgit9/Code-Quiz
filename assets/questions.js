@@ -1,9 +1,8 @@
 const questions = document.getElementById("questions");
 const choice = Array.from (document.getElementsByClassName("choice-text"));
-const startGame =
+// const startGame =
 const correct_Bonus = 10;
 const max_Questions = 10;
-
 let currentQuestions = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -22,7 +21,7 @@ let availableQuestions = [];
 
         choiceD: "x",
 
-        correct: "C",
+        correct: "B",
  },
     {
 
@@ -55,13 +54,13 @@ let availableQuestions = [];
     }, 
     {
 
-        questions: "10 + 19 = ?",
+        questions: "10 * 19 = ?",
 
         choiceA: "29",
 
-        choiceB: "17",
+        choiceB: "190",
 
-        choiceC: "7",
+        choiceC: "a",
 
         choiceD: "None of the above",
 
