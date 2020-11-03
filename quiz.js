@@ -13,7 +13,7 @@ let availableQuesions = [];
 let questions = [
         {
             "question": "17 * 1 = ?",
-    
+             
             "choice1": "q",
     
             "choice2": "18",
@@ -34,7 +34,7 @@ let questions = [
     
             "choice3": "7",
     
-            "choice4": "None of the above",
+            "choice4": "<None of the above>",
     
             "answer": "3",
     
@@ -50,7 +50,7 @@ let questions = [
     
             "choice4": "z",
     
-            "answer": "d",
+            "answer": "3",
     
         },
         {
@@ -80,7 +80,7 @@ let questions = [
     
             "choice4": "168",
     
-            "answer": "6",
+            "answer": "2",
     
         }, {
     
@@ -94,7 +94,7 @@ let questions = [
     
             "choice4": "22",
     
-            "answer": "4"
+            "answer": "3"
     
         }, {
     
@@ -108,7 +108,7 @@ let questions = [
     
             "choice4": "none of the above",
     
-            "answer": "4boys",
+            "answer": "2",
     
         },
         {
@@ -123,7 +123,7 @@ let questions = [
     
             "choice4": "123",
     
-            "answer": "eyz",
+            "answer": "1",
     
         }, {
     
@@ -137,7 +137,7 @@ let questions = [
     
             "choice4": "22",
     
-            "answer": "4",
+            "answer": "3",
     
         }, {
     
@@ -151,7 +151,7 @@ let questions = [
     
             "choice4": "123",
     
-            "answer": "123",
+            "answer": "4",
     
         },
         {
@@ -166,7 +166,7 @@ let questions = [
     
             "choice4": "all of the above",
     
-            "answer": "123abcxyz",
+            "answer": "2",
     
         },
         {
@@ -181,7 +181,7 @@ let questions = [
     
             "choice4": "n",
     
-            "answer": "i",
+            "answer": "3",
     
         }, {
     
@@ -195,7 +195,7 @@ let questions = [
     
             "choice4": "j",
     
-            "answer": "j",
+            "answer": "4",
     
         },
         {
@@ -210,7 +210,7 @@ let questions = [
     
             "choice4": "none of the above",
     
-            "answer": "8",
+            "answer": "3",
     
         },
         {
@@ -225,12 +225,12 @@ let questions = [
     
             "choice4": "100",
     
-            "answer": "i",
+            "answer": "3",
     
         }];
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = 13;
 
 startGame = () => {
     questionCounter = 0;
@@ -280,7 +280,7 @@ choices.forEach(choice => {
             selectedAnswer == currentQuestion.answer ? '"answer"' : 'incorrect';
         // console.log(classToApply)
 
-        if (classToApply === ""answer"") {
+        if (classToApply === "answer") {
             incrementScore(CORRECT_BONUS);
         }
 
