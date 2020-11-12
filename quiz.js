@@ -3,7 +3,7 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
-let timer = 70
+
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -277,11 +277,10 @@ choices.forEach(choice => {
         // console.log(selectedAnswer == currentQuestion.answer);
 
         const classToApply =
-            selectedAnswer == currentQuestion.answer ? "answer" : 'incorrect';
-        console.log(classToApply)
+            selectedAnswer == currentQuestion.answer ? '"answer"' : 'incorrect';
+        // console.log(classToApply)
 
         if (classToApply === "answer") {
-            console.log("success")
             incrementScore(CORRECT_BONUS);
         }
 
@@ -299,12 +298,3 @@ incrementScore = num => {
 };
 
 startGame();
-var intervalID = setInterval(myCallback, 1000);
-function myCallback()
-{ 
- timer--
- if (timer <= 1) {
-    return window.location.assign("./end.html");
- }
- document.getElementById("timer").textContent = timer;
-}
